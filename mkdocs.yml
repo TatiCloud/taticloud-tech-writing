@@ -1,0 +1,19 @@
+site_name: TatiCloud Documentation Hub
+site_url: https://TatiCloud.github.io/linux-memory-commands/
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/fav-logo.png
+  palette:
+    primary: custom
+    accent: custom
+  features:
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - LAMP Stack: lamp-stack.md
+
+extra_css:
+  - stylesheets/extra.css
