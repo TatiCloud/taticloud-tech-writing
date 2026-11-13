@@ -1,5 +1,5 @@
 site_name: TatiCloud Documentation Hub
-site_url: https://TatiCloud.github.io/linux-memory-commands/
+site_url: https://TatiCloud.github.io/linux-handbook/
 
 theme:
   name: material
@@ -13,7 +13,8 @@ theme:
 
 nav:
   - Home: index.md
-  - LAMP Stack: lamp-stack.md
+  - LAMP Stack Handbook: lamp-commands.md
+  - Memory management on VPS: memory-mng.md
 
 extra_css:
   - stylesheets/extra.css

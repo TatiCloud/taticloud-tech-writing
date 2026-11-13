@@ -1,8 +1,8 @@
-# **Linux Commands for Cloud Computing**
+# **Memory management on VPS**
 
 Practical commands for checking memory, disk, and package health on a Linux cloud server (tested on Ubuntu 22.04).
 
-## **Check Free Memory on Virtual Private Server (VPS)**
+## **Free Memory on Virtual Private Server (VPS)**
 
 ### 1. Quick overview
 
@@ -12,7 +12,7 @@ free -h
 
 Look at the **available** column. It shows memory that can be used without swapping, and it matters more than the **free** column.
 
-### 2. Check disk space
+### 2. Disk space
 
 Low disk space often shows up together with low memory.
 
@@ -32,7 +32,7 @@ sudo journalctl --disk-usage
 - `du -xhd1 /var` shows which folders under `/var` use the most space.
 - `journalctl --disk-usage` shows how much space system logs take.
 
-### 3. Check swap
+### 3. Swap status
 
 ```bash
 swapon --show
@@ -40,7 +40,7 @@ swapon --show
 
 No output means no swap is active.
 
-### 4. Find which processes use the most memory
+### 4. Processes by memory use
 
 ```bash
 ps aux --sort=-%mem | head -n 10
@@ -66,7 +66,7 @@ top
 
 Press **M** to sort by memory and **q** to quit.
 
-### 7. Check for stuck package processes
+### 7. Stuck package processes
 
 ```bash
 ps aux | grep -E "apt|dpkg"
