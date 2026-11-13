@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://TatiCloud.github.io/linux-memory-commands/lamp-stack/">
+        <link rel="canonical" href="https://TatiCloud.github.io/linux-handbook/lamp-commands/">
       
       
         <link rel="prev" href="..">
       
+      
+        <link rel="next" href="../memory-mng/">
       
       
         
@@ -23,7 +25,7 @@
     
     
       
-        <title>LAMP Stack - TatiCloud Documentation Hub</title>
+        <title>LAMP Stack Handbook - TatiCloud Documentation Hub</title>
       
     
     
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux-commands-for-cloud-computing" class="md-skip">
+        <a href="#lamp-command-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LAMP Stack
+              LAMP Stack Handbook
             
           </span>
         </div>
@@ -247,7 +249,7 @@
   <span class="md-ellipsis">
     
   
-    LAMP Stack
+    LAMP Stack Handbook
   
 
     
@@ -265,7 +267,7 @@
   <span class="md-ellipsis">
     
   
-    LAMP Stack
+    LAMP Stack Handbook
   
 
     
@@ -291,22 +293,132 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#check-free-memory-on-virtual-private-server-vps" class="md-nav__link">
+  <a href="#1-connect-to-your-vps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Check Free Memory on Virtual Private Server (VPS)
+        1. Connect to your VPS
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Check Free Memory on Virtual Private Server (VPS)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-check-the-current-nameservers-for-your-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Check the current nameservers for your domain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-check-the-current-nameservers-for-your-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Check the current nameservers for your domain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-installing-dns-server-bind9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Installing DNS Server (BIND9)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-check-the-status-of-bind9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Check the status of BIND9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-enable-and-start-bind9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Enable and start BIND9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-install-terminal-based-text-editor-vim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Install terminal-based text editor - vim
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-restart-bind9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Restart BIND9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-test-whether-your-server-is-resolving-dns-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Test whether your server is resolving DNS queries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-test-your-dns-from-another-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Test your DNS from another machine
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-a-web-server-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing a Web Server (Apache2)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing a Web Server (Apache2)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-quick-overview" class="md-nav__link">
+  <a href="#1-updated-package-lists-and-install-the-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Quick overview
+        1. Updated package lists and install the server
       
     </span>
   </a>
@@ -314,10 +426,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-check-disk-space" class="md-nav__link">
+  <a href="#2-apache-2-status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Check disk space
+        2. Apache 2 status
       
     </span>
   </a>
@@ -325,10 +437,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-check-swap" class="md-nav__link">
+  <a href="#3-to-ensure-apache-starts-automatically-at-boot-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Check swap
+        3. To ensure Apache starts automatically at boot time
       
     </span>
   </a>
@@ -336,10 +448,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-find-which-processes-use-the-most-memory" class="md-nav__link">
+  <a href="#4-status-of-uncomplicated-firewall-ufw" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Find which processes use the most memory
+        4. Status of uncomplicated firewall (UFW)
       
     </span>
   </a>
@@ -347,10 +459,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-detailed-memory-info" class="md-nav__link">
+  <a href="#5-enable-both-http-and-https" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Detailed memory info
+        5. Enable both HTTP and HTTPS
       
     </span>
   </a>
@@ -358,21 +470,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-live-view" class="md-nav__link">
+  <a href="#6-get-info-about-public-ip-address" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Live view
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-check-for-stuck-package-processes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Check for stuck package processes
+        6. Get info about public IP address
       
     </span>
   </a>
@@ -388,6 +489,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memory-mng/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memory management on VPS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -419,22 +547,132 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#check-free-memory-on-virtual-private-server-vps" class="md-nav__link">
+  <a href="#1-connect-to-your-vps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Check Free Memory on Virtual Private Server (VPS)
+        1. Connect to your VPS
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Check Free Memory on Virtual Private Server (VPS)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-check-the-current-nameservers-for-your-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Check the current nameservers for your domain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-check-the-current-nameservers-for-your-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Check the current nameservers for your domain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-installing-dns-server-bind9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Installing DNS Server (BIND9)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-check-the-status-of-bind9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Check the status of BIND9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-enable-and-start-bind9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Enable and start BIND9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-install-terminal-based-text-editor-vim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Install terminal-based text editor - vim
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-restart-bind9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Restart BIND9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-test-whether-your-server-is-resolving-dns-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Test whether your server is resolving DNS queries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-test-your-dns-from-another-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Test your DNS from another machine
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-a-web-server-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing a Web Server (Apache2)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing a Web Server (Apache2)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-quick-overview" class="md-nav__link">
+  <a href="#1-updated-package-lists-and-install-the-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Quick overview
+        1. Updated package lists and install the server
       
     </span>
   </a>
@@ -442,10 +680,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-check-disk-space" class="md-nav__link">
+  <a href="#2-apache-2-status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Check disk space
+        2. Apache 2 status
       
     </span>
   </a>
@@ -453,10 +691,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-check-swap" class="md-nav__link">
+  <a href="#3-to-ensure-apache-starts-automatically-at-boot-time" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Check swap
+        3. To ensure Apache starts automatically at boot time
       
     </span>
   </a>
@@ -464,10 +702,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-find-which-processes-use-the-most-memory" class="md-nav__link">
+  <a href="#4-status-of-uncomplicated-firewall-ufw" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Find which processes use the most memory
+        4. Status of uncomplicated firewall (UFW)
       
     </span>
   </a>
@@ -475,10 +713,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-detailed-memory-info" class="md-nav__link">
+  <a href="#5-enable-both-http-and-https" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Detailed memory info
+        5. Enable both HTTP and HTTPS
       
     </span>
   </a>
@@ -486,21 +724,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-live-view" class="md-nav__link">
+  <a href="#6-get-info-about-public-ip-address" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Live view
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-check-for-stuck-package-processes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Check for stuck package processes
+        6. Get info about public IP address
       
     </span>
   </a>
@@ -529,56 +756,65 @@
 
 
 
-<h1 id="linux-commands-for-cloud-computing"><strong>Linux Commands for Cloud Computing</strong></h1>
-<p>Practical commands for checking memory, disk, and package health on a Linux cloud server (tested on Ubuntu 22.04).</p>
-<h2 id="check-free-memory-on-virtual-private-server-vps"><strong>Check Free Memory on Virtual Private Server (VPS)</strong></h2>
-<h3 id="1-quick-overview">1. Quick overview</h3>
-<pre><code class="language-bash">free -h
+<h1 id="lamp-command-reference"><strong>LAMP Command Reference</strong></h1>
+<p>A practical reference for Linux commands, Apache configuration, MySQL administration, PHP management, security and troubleshooting.</p>
+<h2 id="1-connect-to-your-vps">1. Connect to your VPS</h2>
+<pre><code class="language-bash">ssh root@your_droplet_ip
 </code></pre>
-<p>Look at the <strong>available</strong> column. It shows memory that can be used without swapping, and it matters more than the <strong>free</strong> column.</p>
-<h3 id="2-check-disk-space">2. Check disk space</h3>
-<p>Low disk space often shows up together with low memory.</p>
-<pre><code class="language-bash">df -h /
+<h2 id="2-check-the-current-nameservers-for-your-domain">2. Check the current nameservers for your domain</h2>
+<pre><code class="language-bash">dig -t ns example.com
 </code></pre>
-<pre><code class="language-bash">sudo du -xhd1 /var 2&gt;/dev/null
+<h2 id="3-check-the-current-nameservers-for-your-domain">3. Check the current nameservers for your domain</h2>
+<pre><code class="language-bash">dig -t ns example.com
 </code></pre>
-<pre><code class="language-bash">sudo journalctl --disk-usage
+<h2 id="4-installing-dns-server-bind9">4. Installing DNS Server (BIND9)</h2>
+<pre><code class="language-bash">sudo apt update &amp;&amp; apt install bind9 bind9utils bind9-doc
 </code></pre>
-<ul>
-<li><code>df -h /</code> shows total, used, and free space on the main disk.</li>
-<li><code>du -xhd1 /var</code> shows which folders under <code>/var</code> use the most space.</li>
-<li><code>journalctl --disk-usage</code> shows how much space system logs take.</li>
-</ul>
-<h3 id="3-check-swap">3. Check swap</h3>
-<pre><code class="language-bash">swapon --show
+<h2 id="5-check-the-status-of-bind9">5. Check the status of BIND9</h2>
+<pre><code class="language-bash">sudo systemctl status bind9
 </code></pre>
-<p>No output means no swap is active.</p>
-<h3 id="4-find-which-processes-use-the-most-memory">4. Find which processes use the most memory</h3>
-<pre><code class="language-bash">ps aux --sort=-%mem | head -n 10
+<h2 id="6-enable-and-start-bind9">6. Enable and start BIND9</h2>
+<pre><code class="language-bash">sudo systemctl enable bind9
 </code></pre>
-<p>Shows the top 10 processes by memory use.</p>
-<h3 id="5-detailed-memory-info">5. Detailed memory info</h3>
-<pre><code class="language-bash">head -n 5 /proc/meminfo
-vmstat 1 5
+<pre><code class="language-bash">sudo systemctl start bind9
 </code></pre>
-<ul>
-<li><code>/proc/meminfo</code> shows total, free, and available memory in detail.</li>
-<li><code>vmstat 1 5</code> prints 5 snapshots, one per second. Watch the <code>si</code> and <code>so</code> columns: values above zero mean the system is swapping.</li>
-</ul>
-<h3 id="6-live-view">6. Live view</h3>
-<pre><code class="language-bash">top
+<h2 id="7-install-terminal-based-text-editor-vim">7. Install terminal-based text editor - vim</h2>
+<pre><code class="language-bash">sudo apt install vim
 </code></pre>
-<p>Press <strong>M</strong> to sort by memory and <strong>q</strong> to quit.</p>
-<h3 id="7-check-for-stuck-package-processes">7. Check for stuck package processes</h3>
-<pre><code class="language-bash">ps aux | grep -E &quot;apt|dpkg&quot;
-sudo dpkg --audit
+<h2 id="8-restart-bind9">8.  Restart BIND9</h2>
+<pre><code class="language-bash">sudo systemctl reload-or-restart bind9
 </code></pre>
-<ul>
-<li>The first command lists running package processes.</li>
-<li><code>dpkg --audit</code> reports packages that are half-installed or misconfigured. No output means everything is fine.</li>
-</ul>
-<p>!!! Warning</p>
-<p>Do not kill package processes or delete lock files until you know what they are.</p>
+<h2 id="9-test-whether-your-server-is-resolving-dns-queries">9. Test whether your server is resolving DNS queries</h2>
+<pre><code class="language-bash">sudo dig -t a @localhost google.com
+</code></pre>
+<h2 id="10-test-your-dns-from-another-machine">10. Test your DNS from another machine</h2>
+<pre><code class="language-bash">sudo dig -t ns example.com
+</code></pre>
+<h2 id="installing-a-web-server-apache2"><strong>Installing a Web Server (Apache2)</strong></h2>
+<h3 id="1-updated-package-lists-and-install-the-server">1. Updated package lists and install the server</h3>
+<pre><code class="language-bash">sudo apt update &amp;&amp; apt install apache2
+</code></pre>
+<h3 id="2-apache-2-status">2. Apache 2 status</h3>
+<pre><code class="language-bash">sudo systemctl status apache2
+</code></pre>
+<h3 id="3-to-ensure-apache-starts-automatically-at-boot-time">3. To ensure Apache starts automatically at boot time</h3>
+<pre><code class="language-bash">sudo systemctl is-enable apache2
+</code></pre>
+<p>Or</p>
+<p>Disable it from starting at boot time</p>
+<pre><code class="language-bash">sudo systemctl disable apache2
+</code></pre>
+<h3 id="4-status-of-uncomplicated-firewall-ufw">4. Status of uncomplicated firewall (UFW)</h3>
+<pre><code class="language-bash">sudo ufw status
+</code></pre>
+<h3 id="5-enable-both-http-and-https">5. Enable both HTTP and HTTPS</h3>
+<pre><code class="language-bash">sudo ufw allow 'Apache Full'
+</code></pre>
+<h3 id="6-get-info-about-public-ip-address">6. Get info about public IP address</h3>
+<pre><code class="language-bash">ip addr
+</code></pre>
+<pre><code class="language-bash">curl -4 ident.me
+</code></pre>
 
 
 
